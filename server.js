@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const path = require('path');
 
 dotenv.config();
 
@@ -34,8 +35,11 @@ app.post('/api/contact', async (req, res) => {
     }
 });
 
-app.get('/', (req, res) => {
-  res.send('RS Hospitals API is running...');
+// Serve static frontend
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
 app.listen(PORT, () => {

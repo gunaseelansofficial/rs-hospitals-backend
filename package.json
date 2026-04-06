@@ -1,10 +1,17 @@
 {
-  "name": "rs-hospitals",
+  "name": "rs-hospitals-backend",
   "version": "1.0.0",
-  "description": "Root package.json for Render deployment",
+  "description": "Backend API",
+  "main": "index.js",
   "scripts": {
-    "start": "cd server && npm start",
-    "install-all": "cd server && npm install && cd ../client && npm install",
-    "build": "npm run install-all && cd client && npm run build"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3",
+    "nodemon": "^3.1.14"
   }
 }

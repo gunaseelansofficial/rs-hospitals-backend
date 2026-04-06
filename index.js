@@ -35,11 +35,9 @@ app.post('/api/contact', async (req, res) => {
     }
 });
 
-// Serve static frontend
-app.use(express.static(path.join(__dirname, '../client/dist')));
-
-app.get(/(.*)/, (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+// Default API Route
+app.get('/', (req, res) => {
+  res.json({ message: "Welcome to RS Hospitals API backend!" });
 });
 
 app.listen(PORT, () => {

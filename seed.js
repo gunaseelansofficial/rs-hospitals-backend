@@ -7,35 +7,58 @@ dotenv.config();
 
 const doctors = [
     {
-        name: "Dr. Sarah Johnson",
-        specialization: "Cardiology",
-        experience: "15 Years",
-        bio: "Expert in interventional cardiology and heart failure management.",
-        photo: "https://images.unsplash.com/photo-1559839734-2b71f1536783?auto=format&fit=crop&q=80&w=300&h=300",
+        name: 'Dr. Prabhu',
+        qualification: 'MBBS, MD (Psychiatry)',
+        specialization: 'Psychiatry',
+        experience: '12+ Years',
+        availableTime: '9:00 AM – 8:00 PM',
+        type: 'Full-Time Eye Specialist', // User requested this type for Dr. Prabhu
+        icon: '🧠',
+        bgColor: 'bg-indigo-50',
         available: true
     },
     {
-        name: "Dr. Michael Chen",
-        specialization: "Neurology",
-        experience: "12 Years",
-        bio: "Specializing in stroke treatment and neuromuscular disorders.",
-        photo: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=300&h=300",
+        name: 'Dr. Barath Arjun',
+        qualification: 'MBBS, MS (Ophthalmology)',
+        specialization: 'Ophthalmology',
+        experience: '8+ Years',
+        availableTime: '4:00 PM – 8:30 PM',
+        type: 'Full-Time Specialist',
+        icon: '👁',
+        bgColor: 'bg-blue-50',
         available: true
     },
     {
-        name: "Dr. Priya Sharma",
-        specialization: "Orthopedics",
-        experience: "10 Years",
-        bio: "Focused on sports medicine and joint replacement surgeries.",
-        photo: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=300&h=300",
+        name: 'Dr. Bhanu Regha',
+        qualification: 'MBBS (Ophthalmology)',
+        specialization: 'Ophthalmology',
+        experience: '15+ Years',
+        availableTime: '9:00 AM – 3:00 PM',
+        type: 'Visiting Eye Surgeon',
+        icon: '👁',
+        bgColor: 'bg-emerald-50',
         available: true
     },
     {
-        name: "Dr. James Wilson",
-        specialization: "Pediatrics",
-        experience: "8 Years",
-        bio: "Dedicated to providing compassionate care for children and adolescents.",
-        photo: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=300&h=300",
+        name: 'Dr. Rajaram Thangasamy',
+        qualification: 'MBBS, DNB (Ophthalmology)',
+        specialization: 'Ophthalmology',
+        experience: '20+ Years',
+        availableTime: 'Visiting Surgeon',
+        type: 'Visiting Specialist',
+        icon: '👁',
+        bgColor: 'bg-amber-50',
+        available: true
+    },
+    {
+        name: 'Dr. Adaikalanathan Louis',
+        qualification: 'Diploma in Anaesthesiology',
+        specialization: 'Anaesthesiology',
+        experience: '30+ Years',
+        availableTime: 'Visiting Specialist',
+        type: 'Visiting Specialist',
+        icon: '💉',
+        bgColor: 'bg-rose-50',
         available: true
     }
 ];
